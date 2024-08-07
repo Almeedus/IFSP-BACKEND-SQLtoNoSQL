@@ -1,2 +1,23 @@
 # IFSP-BACKEND-SQLtoNoSQL
-Flask API to convert a relational database to a non-relational database
+
+Este projeto consiste em uma API Flask que realiza a conversão de uma base de dados relacional (Banco utilizado: MySQL) para uma base de dados não relacional (Banco utilizado: MongoDB).
+
+## Como rodar este projeto?
+Para definirmos um escopo, vamos configurar um ambiente virtual com as libs que precisamos.
+```
+python3 -m venv venv
+```
+Ativar seu ambiente virtual.
+- Linux:
+```
+source venv/bin/activate
+```
+- Windows
+```
+venv/Scripts/activate
+```
+
+Instalar as dependências.
+```
+pip install -r requirements.txt
+```
