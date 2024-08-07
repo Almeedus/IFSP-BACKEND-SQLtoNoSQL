@@ -36,5 +36,5 @@ venv/Scripts/activate
 
 Instalar as dependências.
 ```
-pip install -r requirements.txt
+pip install flask pymysql pymongo
 ```
