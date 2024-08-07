@@ -8,16 +8,16 @@ bp = Blueprint('main', __name__)
 def convert():
     # Conectar ao MySQL
     mysql_conn = pymysql.connect(
-        host='localhost',
+        host='127.0.0.1',
         user='root',
-        password='senha',
-        db='minha_base'
+        password='',
+        db='cadastroMySQL'
     )
     cursor = mysql_conn.cursor(pymysql.cursors.DictCursor)
     
     # Conectar ao MongoDB
-    mongo_client = MongoClient('mongodb://localhost:27017/')
-    mongo_db = mongo_client['minha_base_nosql']
+    mongo_client = MongoClient('mongodb://127.0.0.1:27017/')
+    mongo_db = mongo_client['cadastroMongo']
     
     # Converter dados de usuários
     cursor.execute('SELECT * FROM usuario')
