@@ -5,5 +5,6 @@ def create_app():
     
     with app.app_context():
         from . import routes
+        routes.init_app(app)
         
     return app
